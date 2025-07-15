@@ -1,4 +1,4 @@
-## ESP32 NeoPixel **Matter** Light – README
+## ESP32 NeoPixel **Matter** Light
 
 Turn your ESP32-based LED strip into a fully-fledged **Matter “Enhanced Color Light”** that you can pair with Apple Home, Google Home, SmartThings, or any other Matter controller.
 
@@ -21,7 +21,6 @@ Turn your ESP32-based LED strip into a fully-fledged **Matter “Enhanced Color 
 |   1 | ESP32 DevKit (e.g. WROOM-32, S3, C3)     | Must have at least 4 MB flash for the Matter stack                                      |
 |   1 | **WS2812 / SK6812 NeoPixel** LED strip   | 5 V, 39 LEDs by default – adjust `NUM_LEDS` if yours differs                            |
 |   1 | 5 V power supply                         | **Do NOT** power the strip from the ESP32’s 5 V pin; give the LEDs a dedicated 5 V rail |
-|   — | Level-shifter (optional but recommended) | Ensures clean 3 V → 5 V data to the strip                                               |
 |   — | Common ground wire                       | ESP32 **GND** ↔ LED strip **GND** ↔ PSU **–**                                           |
 
 ---
@@ -33,8 +32,6 @@ ESP32 GPIO26  ───►  DIN on LED strip
 ESP32 GND     ────  GND on LED strip + PSU–
 5 V PSU +     ────  5 V on LED strip
 ```
-
-*(If you use a level shifter, place it between GPIO26 and DIN.)*
 
 ---
 
