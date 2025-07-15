@@ -115,7 +115,6 @@ Then run `pio run -t upload -t monitor`.
 ### 📋 Serial output example
 
 ```
-On/Off: 1
 RGB: 236, 114, 156
 BRI: 128
 ```
