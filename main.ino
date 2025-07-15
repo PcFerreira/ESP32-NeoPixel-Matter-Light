@@ -37,10 +37,8 @@ void applyState()
     return;
   }
 
-  Serial.printf("On/Off: %d\n", lightEP.getOnOff());
   Serial.printf("RGB: %3u, %3u, %3u\n", rgb.r, rgb.g, rgb.b);
   Serial.printf("BRI: %3u\n", bri);
-
 
   strip.setBrightness(bri);
   strip.fill(strip.Color(rgb.r, rgb.g, rgb.b));
